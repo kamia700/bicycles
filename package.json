@@ -1,12 +1,14 @@
 {
   "name": "bicycles",
-  "version": "17.0.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Стартовый шаблон сборки Лиги А",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
+    "eslint": "4.16.0",
+    "eslint-config-htmlacademy": "0.4.x",
     "gulp": "4.0.x",
     "gulp-csso": "^4.0.1",
     "gulp-imagemin": "^7.1.0",
@@ -21,7 +23,7 @@
     "gulp-webp": "^4.0.1",
     "pixel-glass": "^1.0.13",
     "posthtml-include": "^1.2.0",
-    "stylelint": "10.1.x",
+    "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
@@ -50,9 +52,6 @@
     "node": "8.16"
   },
   "dependencies": {
-    "cwebp": "^2.0.5",
-    "del": "^5.1.0",
-    "editorconfig": "^0.15.3",
-    "gulp-htmlmin": "^5.0.1"
+    "del": "^5.1.0"
   }
 }
