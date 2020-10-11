@@ -9,15 +9,15 @@
   <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
   <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 <body>
 
   <header class="page-header page-header--nojs">
     <div class="page-header__block">
-      <a href="#" class="page-header__logo">
-        <img src="img/logo.svg" width="67.6" height="20.28" alt="Логотип сайта Велосипеды">
+      <a class="page-header__logo">
+        <img src="img/logo.svg" width="67" height="20" alt="Логотип сайта Велосипеды">
       </a>
       <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
     </div>
@@ -46,7 +46,7 @@
       </div>
       <div class="intro-block__form form">
         <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-        <form class="form__block" action="">
+        <form class="form__block" method="post" enctype="multipart/form-data" autocomplete="off" action="http://echo.htmlacademy.ru">
           <div class="form__field">
             <label class="visually-hidden" for="user-name">Email</label>
             <input id="user-name" type="text" name="name" placeholder="Введите Ваше Имя">
@@ -80,6 +80,7 @@
           <p>
             <picture>
               <source type="image/webp" srcset="img/road-desktop@1x.webp 1x, img/road-desktop@2x.webp 2x">
+              <!-- 1х: 342px; 2x: 684px -->
               <img src="img/road-desktop@1x.jpg" srcset="img/road-desktop@2x.jpg 2x" width="342" height="503" alt="фото дорожного велосипеда">
             </picture>
           </p>
@@ -90,6 +91,7 @@
           <p>
             <picture>
               <source type="image/webp" srcset="img/mountain-desktop@1x.webp 1x, img/mountain-desktop@2x.webp 2x">
+              <!-- 1х: 342px; 2x: 684px -->
               <img src="img/mountain-desktop@1x.jpg" width="342" height="566" alt="фото горного велосипеда">
             </picture>
             </p>
@@ -100,7 +102,8 @@
           <p>
             <picture>
               <source type="image/webp" srcset="img/child-desktop@1x.webp 1x, img/child-desktop@2x.webp 2x">
-              <img src="img/child-desktop.jpg@1x" width="342" height="512.59" alt="фото детского велосипеда">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img src="img/child-desktop.jpg@1x" width="342" height="512" alt="фото детского велосипеда">
             </picture>
           </p>
           <figcaption>Детский велосипед</figcaption>
@@ -114,6 +117,7 @@
       <a href="#">
         <picture>
           <source type="image/webp" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+          <!-- 1х: 929px; 2x: 1858px -->
           <img src="img/video-desktop@1x.jpg" width="929" height="522" alt="заставка для видео">
         </picture>
       </a>
@@ -130,6 +134,7 @@
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <picture>
         <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+        <!-- 1х: 957px; 2x: 1914px -->
         <img src="img/map-desktop@1x.png" width="957" height="530" alt="Велосипеды по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19">
       </picture>
       <ul>
