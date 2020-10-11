@@ -1,7 +1,6 @@
 {
-  "name": "bicycles",
+  "name": "liga",
   "version": "1.0.0",
-  "private": true,
   "description": "Стартовый шаблон сборки Лиги А",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
@@ -12,9 +11,8 @@
     "gulp": "4.0.x",
     "gulp-csso": "^4.0.1",
     "gulp-imagemin": "^7.1.0",
-    "gulp-jsmin": "^0.1.5",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "8.0.x",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "^8.0.0",
     "gulp-posthtml": "^3.0.5",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
@@ -22,14 +20,15 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "pixel-glass": "^1.0.13",
+    "postcss": "^8.1.1",
     "posthtml-include": "^1.2.0",
-    "stylelint": "9.10.x",
+    "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/scss/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
+    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
     "build": "gulp build",
     "start": "gulp start",
     "webp": "gulp webp",
@@ -46,12 +45,12 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/scss/**/*.scss"
+    "source/scss/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "8.16"
   },
   "dependencies": {
-    "del": "^5.1.0"
+    "del": "^4.1.1"
   }
 }
