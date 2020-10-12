@@ -1,3 +1,155 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 825px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    display: block;
+    height: 825px;
+    background-color: $bg-dark;
+    background-image: url("../img/bg-desktop@1x.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-desktop@2x.jpg");
+    }
+  }
+}
+
 .page-header__toggle {
   display: none;
+}
+
+.page-header__block {
+  width: 100%;
+  max-width: 875px;
+  min-height: 322px;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.page-header__intro {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 267px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.page-header__logo{
+
+  & a {
+    position: absolute;
+    bottom: -7%;
+    left: 0;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    min-height: auto;
+
+    &::before {
+      bottom: 0;
+      height: 49.5%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 100%;
+    }
+  }
+
+  .page-header__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    min-height: auto;
+    max-width: 100%;
+  }
+
+  .page-header__logo {
+    width: 100%;
+    background: $text-light;
+    height: 50px;
+
+    & a {
+      z-index: -1;
+      bottom: 0;
+      top: 25px;
+      left: 22px;
+    }
+  }
+
+  .page-header__toggle {
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    margin-left: auto;
+    background-color: $decoration-color;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+  }
+
+  .page-header--close .page-header__toggle {
+    background-image: url("../img/menu-burger.svg");
+    background-repeat: no-repeat;
+    border: none;
+    background-position: center;
+  }
+
+  .page-header--close {
+    & .page-header__logo {
+      background: transparent;
+    }
+
+    & .page-header__nav {
+      display: none;
+    }
+
+    & a {
+      z-index: 1;
+    }
+  }
+}
+
+@media (max-width: $width-mobile) {
+  .page-header__logo {
+    & a {
+      left: 17px;
+      top: 25px;
+    }
+  }
+
+  .page-header {
+
+    &::before {
+
+      height: 52%;
+
+      background-image: url("../img/bg-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-mobile@2x.jpg");
+      }
+    }
+  }
 }

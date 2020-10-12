@@ -1,0 +1,45 @@
+@media (max-width: $tablet-width) {
+  .nojs {
+    & .page-header__logo {
+      background: transparent;
+    }
+
+    & .page-header__toggle {
+      display: none;
+    }
+
+    & a {
+      z-index: 1;
+    }
+
+    & .main-nav {
+      & ul {
+        position: relative;
+        height: auto;
+        top: auto;
+      }
+    }
+
+    & .page-header {
+      &::before {
+        top: 50%;
+        transform: translateY(-50%);
+        height: 43.5%;
+        background-position: bottom;
+        background-size: cover;
+      }
+    }
+  }
+
+  @media (max-width: $width-mobile) {
+    .nojs {
+      & .page-header {
+        &::before {
+          top: 50%;
+          transform: translateY(-50%);
+          height: 43.5%;
+        }
+      }
+    }
+  }
+}

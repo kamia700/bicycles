@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #141517;
+  color: $text-dark;
 
   margin: 0;
   padding: 0;
@@ -32,4 +32,8 @@ img {
 
 ul {
   @include reset;
+}
+
+.lock {
+  overflow: hidden;
 }
