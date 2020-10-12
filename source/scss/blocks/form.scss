@@ -1,8 +1,6 @@
 .form__block {
   display: flex;
   justify-content: space-between;
-
-  display: flex;
   flex-direction: column;
 
   & button {
@@ -21,7 +19,6 @@
 }
 
 .form__field {
-
   & input {
     color: $text-opacity-05;
     font-weight: 400;
@@ -53,6 +50,7 @@
   .form__block {
     margin: 0 6px;
   }
+
   .form__field {
     & input {
       padding: 12px 25px 10px;

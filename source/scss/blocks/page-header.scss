@@ -19,7 +19,7 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: auto;
-    width: 100%;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-desktop@2x.jpg");
     }
@@ -48,8 +48,7 @@
   padding-right: 10px;
 }
 
-.page-header__logo{
-
+.page-header__logo {
   & a {
     position: absolute;
     bottom: -7%;
@@ -140,11 +139,8 @@
   }
 
   .page-header {
-
     &::before {
-
       height: 52%;
-
       background-image: url("../img/bg-mobile@1x.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
