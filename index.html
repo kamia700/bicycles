@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,28 @@
   <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font">
 
   <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- Pixel Glass -->
+<!-- <style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    background-image: url("img/Frame1.png");
+  }
+  @media (max-width: 1023px ) {
+    HTML {
+      background-image: url("img/Frame2.png");
+    }
+  }
+  @media (max-width: 767px ) {
+    HTML {
+      background-image: url("img/Frame3.png");
+    }
+  }
+</style>
+<link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
+<script src="https://yoksel.github.io/pixel-glass-js/script.js"></script> -->
+<!-- // Pixel Glass -->
 
 </head>
 <body class="nojs">
@@ -27,16 +49,16 @@
       <nav class="page-header__nav main-nav">
         <ul>
           <li>
-            <a href="about.html">О нас</a>
+            <a href="#about">О нас</a>
           </li>
           <li>
-            <a href="types.html">Виды велосипедов</a>
+            <a href="#types">Виды велосипедов</a>
           </li>
           <li>
-            <a href="videos.html">Видео про велосипеды</a>
+            <a href="#videos">Видео про велосипеды</a>
           </li>
           <li>
-            <a href="contacts.html">Контакты</a>
+            <a href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -66,55 +88,49 @@
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница-Велосипеды</h1>
 
-    <section class="about">
+    <section class="about" id="about">
       <h2>Несколько фактов о нас</h2>
       <ul>
-        <li>Самый широкий выбор велосипедов!</li>
-        <li>Доставка велосипедов по всей России!</li>
-        <li>Большой выбор крутых аксессуаров!</li>
-        <li>Профессиональные консультации!</li>
+        <li><p>Самый широкий выбор велосипедов!</p></li>
+        <li><p>Доставка велосипедов по всей России!</p></li>
+        <li><p>Большой выбор крутых аксессуаров!</p></li>
+        <li><p>Профессиональные консультации!</p></li>
       </ul>
     </section>
 
-    <section class="types">
+    <section class="types" id="types">
       <h2>Виды велосипедов</h2>
       <div class="types__wrapper">
-        <figure>
-          <p>
+        <figure class="types__photo types__photo--road">
             <picture>
               <source type="image/webp" srcset="img/road-desktop@1x.webp 1x, img/road-desktop@2x.webp 2x">
               <!-- 1х: 342px; 2x: 684px -->
               <img src="img/road-desktop@1x.jpg" srcset="img/road-desktop@2x.jpg 2x" width="342" height="503" alt="фото дорожного велосипеда">
             </picture>
-          </p>
           <figcaption>Дорожный велосипед</figcaption>
         </figure>
 
-        <figure>
-          <p>
+        <figure class="types__photo types__photo--mountain">
             <picture>
               <source type="image/webp" srcset="img/mountain-desktop@1x.webp 1x, img/mountain-desktop@2x.webp 2x">
               <!-- 1х: 342px; 2x: 684px -->
               <img src="img/mountain-desktop@1x.jpg" width="342" height="566" alt="фото горного велосипеда">
             </picture>
-            </p>
           <figcaption>Горный велосипед</figcaption>
         </figure>
 
-        <figure>
-          <p>
+        <figure class="types__photo types__photo--child">
             <picture>
               <source type="image/webp" srcset="img/child-desktop@1x.webp 1x, img/child-desktop@2x.webp 2x">
               <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/child-desktop.jpg@1x" width="342" height="512" alt="фото детского велосипеда">
+              <img src="img/child-desktop@1x.jpg" width="342" height="512" alt="фото детского велосипеда">
             </picture>
-          </p>
           <figcaption>Детский велосипед</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="video">
+    <section class="video" id="videos">
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
       <a href="#">
@@ -132,7 +148,7 @@
       </button>
     </section>
 
-    <footer>
+    <footer id="contacts">
       <h2>Как нас найти?</h2>
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <picture>
