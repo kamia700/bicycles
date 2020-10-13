@@ -1,0 +1,127 @@
+.about {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  max-width: 1190px;
+
+  & h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+
+
+    margin-top: 150px;
+    margin-bottom: 48px;
+    padding-left: 20px;
+  }
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 22px;
+    line-height: 34px;
+
+    counter-reset: myCounter;
+
+    margin-bottom: 100px;
+  }
+
+  & li {
+    display: flex;
+    flex-direction: column;
+    max-width: 24%;
+    width: 100%;
+    padding: 32px 15px;
+    min-height: 140px;
+
+    text-align: center;
+    letter-spacing: -0.5px;
+    position: relative;
+
+    &:not(:nth-child(4n)) {
+      margin-right: 1.3%;
+    }
+
+    &::before {
+      counter-increment: myCounter;
+      content: counter(myCounter, decimal-leading-zero);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block;
+      font-size: 28px;
+      line-height: 38px;
+      font-weight: 700;
+      color: $decoration-color;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    max-width: 76%;
+
+    & h2 {
+      font-size: 24px;
+      line-height: 41px;
+
+      margin-top: 70px;
+      margin-bottom: 31px;
+      padding-left: 0;
+    }
+
+    & ul {
+      margin-bottom: 30px;
+    }
+
+    & li {
+      &:not(:nth-child(4n)) {
+        margin-right: 0;
+      }
+
+      max-width: 50%;
+      padding-bottom: 17px;
+    }
+  }
+}
+
+@media (max-width: $width-mobile) {
+  .about {
+    max-width: 100%;
+
+    & h2 {
+      margin-bottom: 30px;
+    }
+
+    & ul {
+      font-size: 18px;
+      flex-direction: column;
+      margin-bottom: 33px;
+    }
+
+    & li {
+      max-width: 100%;
+
+      padding: 0 15px;
+      padding-top: 36px;
+      min-height: 125px;
+
+      &:first-child {
+        margin-bottom: 7px;
+      }
+
+      &:not(:first-child) {
+        margin-bottom: 32px;
+
+        &::before {
+          top: 7px;
+        }
+      }
+    }
+  }
+}
