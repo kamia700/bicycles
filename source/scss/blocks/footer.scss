@@ -1,0 +1,156 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: $text-dark;
+
+    padding-right: 10px;
+    margin-bottom: 12px;
+  }
+
+  & p {
+    font-size: 17px;
+    line-height: 31px;
+    color: $black-opacity-07;
+    text-align: center;
+    max-width: 555px;
+    padding-right: 17px;
+    margin-bottom: 40px;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 957px;
+    width: 33.5%;
+    margin-top: 33px;
+  }
+
+  & li {
+    white-space: nowrap;
+
+    &:first-child {
+      margin-right: 26.8%;
+    }
+  }
+
+  & svg {
+    position: absolute;
+    top: 0;
+    left: -40px;
+  }
+
+  & a {
+    position: relative;
+    line-height: 22px;
+    color: $black-opacity-07;
+  }
+}
+
+.footer__contact {
+  &:hover {
+    color: $decoration-color;
+
+    & path {
+      fill: $decoration-color--05;
+    }
+  }
+
+  &:focus {
+    color: $decoration-color;
+
+    & path {
+      fill: $decoration-color--05;
+    }
+  }
+
+  &:active {
+    color: $text-dark;
+
+    & path {
+      fill: $decoration-color--05;
+    }
+  }
+}
+
+.footer__map {
+  display: block;
+  width: 66.5%;
+
+  & img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .footer {
+    & h2 {
+      font-size: 24px;
+
+      padding-right: 0;
+      margin-bottom: 2px;
+    }
+
+    & p {
+      width: 100%;
+      max-width: 698px;
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+
+    & ul {
+      max-width: 698px;
+      width: 62.5%;
+      margin-top: 15px;
+    }
+  }
+
+  .footer__map {
+    width: 91%;
+  }
+}
+
+@media (max-width: $width-mobile) {
+  .footer {
+    & h2 {
+      font-size: 18px;
+    }
+
+    & p {
+      width: 83%;
+    }
+
+    & ul {
+      flex-direction: column;
+      max-width: none;
+      width: 100%;
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    & li {
+      margin-bottom: 22px;
+      margin-left: 28px;
+
+      &:first-child {
+        margin-right: 0;
+        margin-left: 50px;
+      }
+    }
+  }
+
+  .footer__map {
+    width: 100%;
+
+    & img {
+      width: 100%;
+    }
+  }
+}

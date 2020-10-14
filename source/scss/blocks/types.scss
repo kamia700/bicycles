@@ -3,7 +3,6 @@
   flex-direction: column;
   min-height: 1037px;
   width: 100%;
-
   background-color: $bg-grey;
 
   & h2 {
@@ -151,14 +150,14 @@
     }
 
     & img {
-      height: 301px;
+      max-height: 300px;
+      height: 100%;
+      width: 100%;
       object-fit: cover;
     }
   }
 
   .types__photo--road {
-    position: relative;
-
     &::before {
       content: "";
       position: absolute;
@@ -182,8 +181,6 @@
   }
 
   .types__photo--child {
-    position: relative;
-
     &::before {
       position: absolute;
       background-image: url("../img/ellipse2-tablet.svg");
@@ -191,6 +188,35 @@
       right: -25px;
       height: 68px;
       width: 68px;
+    }
+  }
+}
+
+@media (max-width: $width-mobile) {
+  .types {
+    margin-bottom: 12px;
+  }
+
+  .types__wrapper {
+    flex-direction: column;
+    align-items: center;
+
+    & figure {
+      max-width: 100%;
+      margin-bottom: 43px;
+      width: 270px;
+    }
+  }
+
+  .types__photo--road {
+    &::before {
+      left: -25px;
+    }
+  }
+
+  .types__photo--child {
+    &::before {
+      right: -15px;
     }
   }
 }
