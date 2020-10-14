@@ -654,26 +654,30 @@ ul {
       width: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
-  .types__photo--road::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/ellipse1-tablet.svg");
-    bottom: -6%;
-    left: -35px;
-    z-index: -1;
-    height: 127px;
-    width: 127px; }
+  .types__photo--road {
+    position: relative; }
+    .types__photo--road::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/ellipse1-tablet.svg");
+      bottom: -6%;
+      left: -35px;
+      z-index: -1;
+      height: 127px;
+      width: 127px; }
   .types__photo--mountain::before {
     display: none; }
   .types__photo--mountain::after {
     display: none; }
-  .types__photo--child::before {
-    position: absolute;
-    background-image: url("../img/ellipse2-tablet.svg");
-    top: -6%;
-    right: -25px;
-    height: 68px;
-    width: 68px; } }
+  .types__photo--child {
+    position: relative; }
+    .types__photo--child::before {
+      position: absolute;
+      background-image: url("../img/ellipse2-tablet.svg");
+      top: -6%;
+      right: -25px;
+      height: 68px;
+      width: 68px; } }
 
 @media (max-width: 767px) {
   .types {

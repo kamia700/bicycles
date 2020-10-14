@@ -18,7 +18,7 @@
     background-image: url("../img/bg-desktop@1x.jpg");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-desktop@2x.jpg");

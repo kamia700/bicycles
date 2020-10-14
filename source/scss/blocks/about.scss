@@ -23,7 +23,9 @@
 
     font-size: 22px;
     line-height: 34px;
+
     counter-reset: myCounter;
+
     margin-bottom: 100px;
   }
 
@@ -37,6 +39,7 @@
 
     text-align: center;
     letter-spacing: -0.5px;
+    // border: 1px solid green;
     position: relative;
 
     &:not(:nth-child(4n)) {

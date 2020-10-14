@@ -26,9 +26,22 @@
 
     & a {
       color: $text-opacity-07;
+
+      &:hover {
+        color: $decoration-color;
+      }
+
+      &:focus {
+        color: $decoration-color;
+      }
+
+      &:active {
+        color: $decoration-color--05;
+      }
     }
   }
 }
+
 
 @media (max-width: $tablet-width) {
   .main-nav {
