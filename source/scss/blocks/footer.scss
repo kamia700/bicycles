@@ -56,26 +56,14 @@
 .footer__contact {
   &:hover {
     color: $decoration-color;
-
-    & path {
-      fill: $decoration-color--05;
-    }
   }
 
   &:focus {
     color: $decoration-color;
-
-    & path {
-      fill: $decoration-color--05;
-    }
   }
 
   &:active {
     color: $text-dark;
-
-    & path {
-      fill: $decoration-color--05;
-    }
   }
 }
 
@@ -95,7 +83,7 @@
       font-size: 24px;
 
       padding-right: 0;
-      margin-bottom: 2px;
+      margin-bottom: 3px;
     }
 
     & p {
@@ -108,7 +96,7 @@
     & ul {
       max-width: 698px;
       width: 62.5%;
-      margin-top: 15px;
+      margin-top: 14px;
     }
   }
 
