@@ -495,7 +495,7 @@ ul {
       margin-bottom: 31px;
       padding-left: 0; }
     .about ul {
-      margin-bottom: 30px; }
+      margin-bottom: 34px; }
     .about li {
       max-width: 50%;
       padding-bottom: 17px; }
@@ -522,7 +522,7 @@ ul {
       .about li:first-child {
         margin-bottom: 7px; }
       .about li:not(:first-child) {
-        margin-bottom: 32px; }
+        margin-bottom: 33px; }
         .about li:not(:first-child)::before {
           top: 7px; } }
 
@@ -543,7 +543,7 @@ ul {
     line-height: 30px;
     text-align: center;
     padding-right: 10px;
-    margin-top: 148px;
+    margin-top: 150px;
     margin-bottom: 50px; }
 
 .types__wrapper {
@@ -626,12 +626,12 @@ ul {
 
 @media (max-width: 1023px) {
   .types {
-    min-height: 949px; }
+    min-height: 946px; }
     .types h2 {
       font-size: 24px;
       line-height: 41px;
       padding-right: 0;
-      margin-top: 50px;
+      margin-top: 48px;
       margin-bottom: 30px; }
   .types__wrapper {
     -ms-flex-pack: distribute;
@@ -682,6 +682,8 @@ ul {
 @media (max-width: 767px) {
   .types {
     margin-bottom: 12px; }
+    .types h2 {
+      margin-top: 48px; }
   .types__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -692,8 +694,10 @@ ul {
             align-items: center; }
     .types__wrapper figure {
       max-width: 100%;
-      margin-bottom: 43px;
+      margin-bottom: 41px;
       width: 270px; }
+    .types__wrapper figcaption {
+      margin-top: 15px; }
   .types__photo--road::before {
     left: -25px; }
   .types__photo--child::before {
@@ -724,7 +728,7 @@ ul {
     text-align: center;
     color: #ffffff;
     padding-right: 10px;
-    margin-top: 120px;
+    margin-top: 122px;
     margin-bottom: 4px; }
   .video__wrapper p {
     font-weight: 300;
@@ -796,7 +800,7 @@ ul {
   .video__wrapper {
     margin-bottom: 55px; }
     .video__wrapper h2 {
-      margin-top: 82px;
+      margin-top: 84px;
       letter-spacing: -0.2px;
       padding-right: 15px; }
     .video__wrapper p {
@@ -864,18 +868,12 @@ ul {
 
 .footer__contact:hover {
   color: #0ad9c6; }
-  .footer__contact:hover path {
-    fill: rgba(10, 217, 198, 0.5); }
 
 .footer__contact:focus {
   color: #0ad9c6; }
-  .footer__contact:focus path {
-    fill: rgba(10, 217, 198, 0.5); }
 
 .footer__contact:active {
   color: #1f1f1f; }
-  .footer__contact:active path {
-    fill: rgba(10, 217, 198, 0.5); }
 
 .footer__map {
   display: block;
@@ -889,7 +887,7 @@ ul {
   .footer h2 {
     font-size: 24px;
     padding-right: 0;
-    margin-bottom: 2px; }
+    margin-bottom: 3px; }
   .footer p {
     width: 100%;
     max-width: 698px;
@@ -898,7 +896,7 @@ ul {
   .footer ul {
     max-width: 698px;
     width: 62.5%;
-    margin-top: 15px; }
+    margin-top: 14px; }
   .footer__map {
     width: 91%; } }
 
