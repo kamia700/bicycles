@@ -1,5 +1,6 @@
 .main-nav {
   & ul {
+    @include reset;
     display: flex;
     flex-wrap: wrap;
 
@@ -23,21 +24,21 @@
     &:not(:nth-child(4n)) {
       margin-right: 11%;
     }
+  }
 
-    & a {
-      color: $text-opacity-07;
+  & a {
+    color: $text-opacity-07;
 
-      &:hover {
-        color: $decoration-color;
-      }
+    &:hover {
+      color: $decoration-color;
+    }
 
-      &:focus {
-        color: $decoration-color;
-      }
+    &:focus {
+      color: $decoration-color;
+    }
 
-      &:active {
-        color: $decoration-color--05;
-      }
+    &:active {
+      color: $decoration-color--05;
     }
   }
 }

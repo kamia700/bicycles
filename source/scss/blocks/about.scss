@@ -18,6 +18,7 @@
   }
 
   & ul {
+    @include reset;
     display: flex;
     flex-wrap: wrap;
 
@@ -58,6 +59,7 @@
       font-weight: 700;
       color: $decoration-color;
       text-align: center;
+      vertical-align: middle;
     }
   }
 }
@@ -108,7 +110,7 @@
       max-width: 100%;
 
       padding: 0 15px;
-      padding-top: 36px;
+      padding-top: 37px;
       min-height: 125px;
 
       &:first-child {
@@ -116,7 +118,7 @@
       }
 
       &:not(:first-child) {
-        margin-bottom: 33px;
+        margin-bottom: 32px;
 
         &::before {
           top: 7px;

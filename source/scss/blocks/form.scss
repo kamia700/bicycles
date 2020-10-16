@@ -32,7 +32,7 @@
 
 .form__field {
   & input {
-    color: $text-opacity-05;
+    color: $text-dark;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
@@ -62,12 +62,23 @@
 @media (max-width: $width-mobile) {
   .form__block {
     margin: 0 6px;
+
+    & button {
+      max-width: 321px;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 
   .form__field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     & input {
       padding: 12px 25px 10px;
       margin-bottom: 20px;
+      max-width: 321px;
     }
   }
 }

@@ -96,10 +96,10 @@
   .video__player {
     & button {
       position: absolute;
-      width: 95px;
-      height: 95px;
+      width: 105px;
+      height: 105px;
       top: 51%;
-      left: 49%;
+      left: 50%;
       transform: translate(-50%, -50%);
 
       background-color: transparent;
@@ -137,10 +137,8 @@
     width: 90%;
 
     & button {
-      width: 65px;
-      height: 65px;
-      top: 50%;
-      left: 48%;
+      width: 90px;
+      height: 90px;
     }
 
     & svg {

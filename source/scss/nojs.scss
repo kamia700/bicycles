@@ -12,12 +12,10 @@
       z-index: 1;
     }
 
-    & .main-nav {
-      & ul {
-        position: relative;
-        height: auto;
-        top: auto;
-      }
+    & .main-nav__list {
+      position: relative;
+      height: auto;
+      top: auto;
     }
 
     & .page-header {
